@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="header">
+				<div class="input-block">
+					<label for="hours">Hours:</label>
+					<input
+						type="number"
+						id="hours"
+						name="hours"
+						min="0"
+						max="24"
+						value="0"
+					/>
+				</div>
+				<div class="input-block">
+					<label for="minutes">Minutes:</label>
+					<input
+						type="number"
+						id="minutes"
+						name="minutes"
+						min="0"
+						max="59"
+						value="0"
+					/>
+				</div>
+				<div class="input-block">
+					<label for="seconds">Seconds:</label>
+					<input
+						type="number"
+						id="seconds"
+						name="seconds"
+						min="0"
+						max="59"
+						value="0"
+					/>
+				</div>
+			</div>
+
+			<div id="timer">00:00:00</div>
+			<div class="footer">
+				<button id="startButton" onclick="startTimer()">Start</button>
+				<button id="stopButton" onclick="stopTimer()" disabled>Stop</button>
+				<button id="continueButton" onclick="continueTimer()" disabled>
+					Continue
+				</button>
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
